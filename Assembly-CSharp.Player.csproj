@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Lifetime.cs" />
     <Compile Include="Assets\Scripts\LinearColorChanger.cs" />
+    <Compile Include="Assets\Scripts\CircleInstantiate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
