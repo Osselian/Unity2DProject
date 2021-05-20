@@ -677,7 +677,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4649,7 +4649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ffc738d68744854a9e2976d91b39804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 742870009}
   _duration: 2
   _targetColor: {r: 0.5563283, g: 0, b: 1, a: 1}
 --- !u!1001 &771142899
@@ -5337,12 +5336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _template: {fileID: 7565471351335282566, guid: e20b8ffc48be6f24599e6de4335d9e55, type: 3}
-  _spawnPoints:
-  - {fileID: 1476757343}
-  - {fileID: 491665021}
-  - {fileID: 319834783}
-  - {fileID: 1445621274}
-  - {fileID: 1143093945}
+  _spawnPointsList: {fileID: 741147152}
   _spawnTime: 2
 --- !u!1 &1102314480
 GameObject:

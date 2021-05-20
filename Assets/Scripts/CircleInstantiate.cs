@@ -5,12 +5,23 @@ using UnityEngine;
 public class CircleInstantiate : MonoBehaviour
 {
     [SerializeField] private GameObject _template;
-    [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private Transform _spawnPointsList;    
     [SerializeField] private float _spawnTime;
 
+    private Transform[] _spawnPoints;
     private int _index;
     private float _spawnTimer;
 
+    private void Start()
+    {
+        _spawnPoints = new Transform[_spawnPointsList.childCount];
+
+        for (int i = 0; i < _spawnPointsList.childCount; i++)
+        {
+            _spawnPoints[i] = _spawnPointsList.GetChild(i);
+        }
+        
+    }
     private void Update()
     {
         _spawnTimer += Time.deltaTime;
@@ -19,7 +30,7 @@ public class CircleInstantiate : MonoBehaviour
             _index = Random.Range(0, _spawnPoints.Length);
             GameObject gameObject = Instantiate(_template, _spawnPoints[_index]);
             _spawnTimer = 0;
-        }
-        
+        }        
+      
     }
 }
