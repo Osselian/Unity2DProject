@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LinearColorChanger.cs" />
-    <Compile Include="Assets\Scripts\CircleInstantiate.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
